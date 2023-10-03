@@ -7,9 +7,9 @@ info:
   tags: blind,fuzzing
 
 http:
-  - raw:
-      - | 
-        GET {{BaseURL}} HTTP/1.1
+  - method: GET
+    path:
+      - "{{BaseURL}}"
     
     payloads:
       jndi:
